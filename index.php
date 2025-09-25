@@ -4,7 +4,6 @@
     <title>Form</title>
     <style>
         html, body {
-        
             height: 100%;
             overflow: hidden; 
             margin: 0;
@@ -15,9 +14,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            
             min-height: 100vh; 
-            /* padding-left: 5%; */
             background-image: url(c.jpg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -115,57 +112,47 @@
             <h1>Register</h1>
             <p>Please fill in this form to create an account.</p>
             <hr>
-        
             <div class="input-group">
                 <label for="FirstName">First Name</label>
-                <input type="text" placeholder="Enter First Name" name="FirstName" id="FirstName" required>
+                <input type="text" placeholder="Enter First Name" name="FirstName" id="FirstName">
             </div>
-            
             <div class="input-group">
                 <label for="LastName">Last Name</label>
-                <input type="text" placeholder="Enter Last Name" name="LastName" id="LastName" required>
+                <input type="text" placeholder="Enter Last Name" name="LastName" id="LastName">
             </div>
-        
             <div class="input-group">
                 <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw">
             </div>
-        
             <div class="input-group">
                 <label for="psw-repeat">Repeat Password</label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat">
             </div>
             <hr>
-            
             <div class="input-group">
                 <label for="ID">ID</label>
-                <input type="text" placeholder="Enter ID" name="ID" id="ID" required>
+                <input type="text" placeholder="Enter ID" name="ID" id="ID">
             </div>
-            
             <div class="input-group">
                 <label for="number">Contact Number</label>
-                <input type="text" placeholder="Enter Contact Number" name="number" id="number" required>
+                <input type="text" placeholder="Enter Contact Number" name="number" id="number">
             </div>
-            
             <div class="input-group">
                 <label for="birthdate">Birth Date</label>
-                <input type="text" placeholder="Enter Birth Date" name="birthdate" id="birthdate" required>
+                <input type="text" placeholder="Enter Birth Date" name="birthdate" id="birthdate">
             </div>
-            
             <div class="input-group">
                 <label for="address">Address</label>
-                <input type="text" placeholder="Enter Address" name="address" id="address" required>
+                <input type="text" placeholder="Enter Address" name="address" id="address">
             </div>
-            
             <div class="input-group">
                 <label for="emergencycontact">Emergency Contact</label>
-                <input type="text" placeholder="Enter Emergency Contact" name="emergencycontact" id="emergencycontact" required>
+                <input type="text" placeholder="Enter Emergency Contact" name="emergencycontact" id="emergencycontact">
             </div>
-            
             <p class="terms-text">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-            <button type="submit" class="registerbtn">Register</button>
+            <button type="submit" class="registerbtn" name="save">Submit</button>
+            <button type="submit" class="registerbtn" name="clear" style="margin-top: 10px; background-color: #dc3545;">Delete Records</button>  
         </form>
-        
         <div class="signin-text">
             <p>Already have an account? <a href="#">Sign in</a>.</p>
         </div>
